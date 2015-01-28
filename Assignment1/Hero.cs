@@ -9,6 +9,8 @@ using System.Threading.Tasks;
  *Assignment 1
  *Due Date: Friday January 30th, 2015
  *Value:5% marks
+ *
+ * GitHub: https://github.com/lester88a/COMP123-Assignment-01
  */
 namespace Assignment1
 {
