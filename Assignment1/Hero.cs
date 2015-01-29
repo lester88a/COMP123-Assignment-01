@@ -41,15 +41,15 @@ namespace Assignment1
         {
             //generates random numbers of strength, speed ,health between 1 to 100
             Random rnm = new Random();
-            this.strength = rnm.Next(1, 100);
+            this.strength = rnm.Next(1, 101);
 
 
             Random speed = new Random();
-            this.speed = rnm.Next(1, 100);
+            this.speed = rnm.Next(1, 101);
 
 
             Random health = new Random();
-            this.health = rnm.Next(1, 100);
+            this.health = rnm.Next(1, 101);
 
         }
 
@@ -68,7 +68,7 @@ namespace Assignment1
         {
 
             Random rdmNumber = new Random();
-            this.rdmNumber = rdmNumber.Next(1, 100);
+            this.rdmNumber = rdmNumber.Next(1, 101);
 
             if (this.rdmNumber >= 1 && this.rdmNumber <= 20) //if the hero hits, the health will be between 1-20
             {
@@ -87,7 +87,7 @@ namespace Assignment1
         private int hitDamage()
         {
             Random randomNumber = new Random();//generates a random number.
-            this.rdmNumber = randomNumber.Next(1, 6);
+            this.rdmNumber = randomNumber.Next(1, 6)+1;
             int damages = this.strength * this.rdmNumber;// multiply the strength by a random number
             Console.WriteLine("The hit damage score is {0}, randomNumber{1}.", damages, this.rdmNumber);// display the damage value
             return damages;
